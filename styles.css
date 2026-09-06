@@ -274,7 +274,7 @@ h2 {
 }
 
 .skill-category {
-    background: #d0b24930;
+    background: linear-gradient(to bottom, #fbecd4 0%, #92af0b59 100%);
     padding: 2rem;
     border-radius: 10px;
     border-left: 4px solid  #fdca45;
@@ -292,7 +292,7 @@ h2 {
 }
 
 .skill-tag {
-    background: white;
+    background: #ffffff94;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     border: 1px solid #41377d;
@@ -301,14 +301,14 @@ h2 {
 }
 
 .contact {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #f9e6c5 0%, #cad1a9 100%);
+    color: #41377d;
     text-align: center;
     padding: 4rem 2rem;
 }
 
 .contact h2 {
-    color: white;
+    color: #27214c;
 }
 
 .contact-links {
@@ -320,9 +320,9 @@ h2 {
 }
 
 .contact-link {
-    color: white;
+    color: #41377d;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: opacity 0.3s;
 }
 
@@ -331,7 +331,7 @@ h2 {
 }
 
 footer {
-    background: #222;
+    background: #27214c;
     color: white;
     text-align: center;
     padding: 2rem;
