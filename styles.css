@@ -389,3 +389,85 @@ footer {
     border: 0;
     margin: 0.75rem 0rem;
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #e7e1e9;
+        background-color: #3f3448;
+    }
+
+    header,
+    footer {
+        background: #27212c;
+    }
+
+    nav a {
+        color: #f5f0f7;
+    }
+
+    .hero {
+        background-image: linear-gradient(rgba(23, 21, 26, 0.48), rgba(23, 21, 26, 0.48)), url('images/website-header-2.png');
+        color: #f4eff5;
+    }
+
+    .hero h1,
+    h2 {
+        color: #f1eaf3;
+    }
+
+    .cta-button {
+        background: #c7967d;
+        color: #251f28;
+    }
+
+    .projects {
+        background: #201d22;
+    }
+
+    .project-card {
+        background: #2b272f;
+    }
+
+    .project-content h3,
+    .project-link,
+    .value-content h3 {
+        color: #e2a98b;
+    }
+
+    .project-content p,
+    .value-content p {
+        color: #d2cbd4;
+    }
+
+    .values,
+    .skills {
+        background: #17151a;
+    }
+
+    .value-card,
+    .skill-category {
+        background: #29252d;
+    }
+
+    .skill-category h3 {
+        color: #e2c49a;
+    }
+
+    .skill-tag {
+        background: #3b3540;
+        color: #f2eaf5;
+    }
+
+    .contact {
+        background: linear-gradient(135deg, #3b303b 0%, #263737 100%);
+        color: #f3edf1;
+    }
+
+    .contact h2 {
+        color: #f3edf1;
+    }
+
+    .contact-link {
+        color: #f0c3a8;
+    }
+}
