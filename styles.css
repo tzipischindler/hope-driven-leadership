@@ -159,8 +159,12 @@ h2 {
     font-weight: 400;
 }
 
-.question-row ol{
+.question-row .article-section ol{
 	margin:20px;
+}
+
+.article-content .article-section ol{
+    margin:20px;
 }
 
 
@@ -394,6 +398,15 @@ footer {
     margin: 0.75rem 0rem;
 }
 
+.article-section iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: 0;
+    margin: 0.75rem 0rem;
+}
+
 .article-hero {
     padding: 4rem 2rem 3rem;
     background: #f8f9fa;
@@ -453,7 +466,7 @@ footer {
     color: #3f3448;
 }
 
-.article-section ul{
+.article-section ul ol{
     margin-left: 0.85rem;
     padding-bottom: 16px;
 }
