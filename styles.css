@@ -599,6 +599,10 @@ footer {
     margin-bottom: 1rem;
 }
 
+.article-content ul {
+    margin-left: 1rem;
+}
+
 .article-section {
     padding: 1.5rem 0;
     border-bottom: 1px solid #ded9d4;
