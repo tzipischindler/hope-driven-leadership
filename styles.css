@@ -433,11 +433,13 @@ background: #ffffff;
 
 footer {
     background: #3f3448;
-    color: white;
+    color: #fffcddc7;
     text-align: center;
     padding: 2rem;
     font-weight: 300;
     font-size: 12px;
+    box-shadow: 0 0 18px rgba(255, 222, 150, 0.65);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
 @keyframes slideUp {
