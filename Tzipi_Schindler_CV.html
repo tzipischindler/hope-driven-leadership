@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tzipi Schindler | Technical Product Manager | Engineering Leader</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+body {
+    background: #f3f0eb;
+}
+
+.cv-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.cv-intro {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(63, 52, 72, 0.08);
+    padding: 2rem 2.5rem;
+    margin: 2rem 0 1.5rem;
+}
+
+.cv-intro h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    letter-spacing: 0.15rem;
+    color: #3f3448;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+}
+
+.title-line {
+    color: #4d4d4d;
+    font-size: 1.05rem;
+    margin-bottom: 0.6rem;
+}
+
+.cv-contact-line {
+    color: #4d4d4d;
+    font-size: 0.95rem;
+}
+
+.cv-contact-line a {
+    color: #3f3448;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.cv-contact-line a:hover {
+    text-decoration: underline;
+}
+
+.cv-section {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(63, 52, 72, 0.06);
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.cv-section h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.18rem;
+    color: #3f3448;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(63, 52, 72, 0.2);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.cv-section p,
+.cv-section li,
+.cv-section .degree {
+    font-size: 0.98rem;
+    color: #4d4d4d;
+}
+
+.focus {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.focus li {
+    margin-bottom: 0.75rem;
+    padding-left: 0.25rem;
+}
+
+.skillgroup {
+    margin-bottom: 0.7rem;
+    color: #4d4d4d;
+    line-height: 1.7;
+}
+
+.skillgroup b {
+    color: #3f3448;
+}
+
+.job {
+    margin-bottom: 1.4rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(63, 52, 72, 0.12);
+}
+
+.job:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-bottom: 0.35rem;
+}
+
+.role {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #3f3448;
+}
+
+.company {
+    color: #4d4d4d;
+    font-size: 0.95rem;
+    margin-bottom: 0.45rem;
+}
+
+.company b {
+    color: #3f3448;
+}
+
+.note {
+    font-size: 0.95rem;
+    color: #4d4d4d;
+    margin: 0.4rem 0 0.6rem;
+}
+
+ul.b {
+    margin-left: 1.15rem;
+    padding-left: 0.5rem;
+}
+
+ul.b li {
+    margin-bottom: 0.35rem;
+}
+
+.tech {
+    margin-top: 0.7rem;
+    color: #4d4d4d;
+    font-size: 0.92rem;
+}
+
+.degree {
+    margin-top: 0.25rem;
+}
+
+.cv-contact {
+    background: linear-gradient(135deg, #f0bb91 0%, #c7d3d5 100%);
+    color: #3f3448;
+    text-align: center;
+    padding: 3rem 2rem 2.5rem;
+    margin-top: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(63, 52, 72, 0.06);
+}
+
+.cv-contact .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cv-contact h2 {
+    color: #3f3448;
+    font-size: 1.5rem;
+    letter-spacing: 0.18rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0.75rem;
+    border: none;
+}
+
+.cv-contact p {
+    color: #3f3448;
+    margin-bottom: 1rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.contact-link {
+    color: #3f3448;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.cv-footer {
+    background: #3f3448;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+    .cv-page {
+        padding: 1rem;
+    }
+
+    .cv-intro,
+    .cv-section {
+        padding: 1.2rem 1rem;
+    }
+
+    .cv-intro h1 {
+        font-size: 2rem;
+        letter-spacing: 0.08rem;
+    }
+
+    .row {
+        display: block;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+    <nav>
+        <a class="logo" href="./" aria-label="Tzipi"><img src="images/logo/with-hope.png" alt="Tzipi logo"></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation menu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </button>
+        <ul id="site-navigation">
+            <li><a href="./#projects">ABOUT</a></li>
+            <li><a href="./#skills">SKILLS</a></li>
+            <li><a href="Tzipi_Schindler_CV.html" aria-current="page">CV</a></li>
+            <li><a href="./#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="cv-page">
+    <div class="cv-intro">
+        <h1>Tzipi Schindler</h1>
+        <div class="title-line">Senior Technical Product Manager | Team Facilitation &amp; Creative Orchestration</div>
+    
+    </div>
+
+    <section class="cv-section">
+        <h2>Summary</h2>
+        <p>Product leader with 11+ years of experience, from a 0-to-1 SaaS startup that grew to 200,000+ users to a platform team reporting to the CTO at a global audio technology company. I help teams find focus, build shared ways of working, and keep moving through change, with a practice grounded in product strategy, data, and human connection. I use AI tools hands-on and care about setting clear use cases and boundaries for them.</p>
+    </section>
+
+    <section class="cv-section">
+        <h2>How I Work</h2>
+        <ul class="focus">
+            <li>⭐ I engage the team and reignite motivation by coming together around the team’s mission and values.</li>
+            <li>🎯 I help create focus in the team by thinking about our vision and a strategy for how to go about it, planning and creating a roadmap, and checking in on it on a regular cadence.</li>
+            <li>💡 I support you in coming up with a framework for making decisions that is based on your values.</li>
+            <li>🫶 With a focus on creating more bandwidth for people to excel in what they do best, and prioritizing connection as the basis for better human collaboration, I support you in defining your ways of working, as well as the use cases and boundaries for new technologies.</li>
+            <li>⛈️ Through times of uncertainty, change and stressful release times, I help the team refocus on what matters and what’s in their control, getting back to finding a path forward.</li>
+        </ul>
+    </section>
+
+    <section class="cv-section">
+        <h2>Skillset</h2>
+        <div class="skillgroup"><b>Leadership &amp; Creative Orchestration:</b> Team Facilitation &bull; Continuous Learning &bull; Data-Informed Prioritization &bull; Risk Management</div>
+        <div class="skillgroup"><b>Delivery &amp; Collaboration:</b> Product Vision &amp; Strategy &bull; Roadmapping &bull; OKRs &bull; Continuous Improvement</div>
+        <div class="skillgroup"><b>Data, Analytics &amp; Monitoring:</b> KPI Definition &bull; Product Debt Analysis &bull; Data Visualization &bull; SLA Setting &amp; Monitoring</div>
+        <div class="skillgroup"><b>Tools:</b> SQL, PostgreSQL, Metabase, Mixpanel, Grafana, Sentry, Jira, Miro, Claude, ChatGPT, GitHub Copilot</div>
+        <div class="skillgroup"><b>Languages:</b> English (Native), Hebrew (Native)</div>
+    </section>
+
+    <section class="cv-section">
+        <h2>Recent Project</h2>
+        <div class="job">
+            <div class="row"><span class="role">DevEx Metric Discovery</span><span>2026</span></div>
+            <div class="company"><b>Elevate Women Global Hackathon 2026</b> | <a href="https://tzipischindler.github.io/elevate-devex-metric-discovery/kpi-prep.html" target="_blank" rel="noopener">Live tool</a> | <a href="https://github.com/tzipischindler/elevate-devex-metric-discovery" target="_blank" rel="noopener">GitHub</a></div>
+            <ul class="b">
+                   <li>
+                    Built, using Claude and GitHub Copilot, a conversation starter metrics discovery tool that helps engineering teams find
+                    which delivery and developer-experience metrics to prioritize to learn and improve on the way they work.
+                </li>
+                <li>
+                    Grounded the product with market research, through interviews with engineers, architects, and managers and literature review on how technical debt is managed today.
+                </li>
+        
+            </ul>
+        </div>
+    </section>
+
+    <section class="cv-section">
+        <h2>Professional Experience</h2>
+
+        <div class="job">
+            <div class="row"><span class="role">Senior Technical Product Manager</span><span>Oct 2022 - Apr 2025</span></div>
+            <div class="company"><b>Native Instruments GmbH</b> | Music creation and audio technology | Berlin, Germany | Reporting to the CTO</div>
+            <p class="note">Product manager for the download and activation APIs and the software build &amp; release pipeline, partnering with the API and CI engineering teams.</p>
+            <ul class="b">
+                <li>Partnered with technical leads and engineering managers on team mission, vision, and culture, and ran regular team health checks.</li>
+                <li>Facilitated team and cross-team meetings and workshops; led technical decision-making across disciplines and held regular stakeholder alignment sessions with engineering leadership, product, design, and operations.</li>
+                <li>Assessed the risk and cost of legacy technical debt to prioritize migration and modernization while maintaining delivery.</li>
+                <li>Identified and executed initiatives that reduced support and maintenance workload as team size shrank, keeping the team focused on pipeline improvements through restructuring.</li>
+                          <li>Interviewed internal engineering teams to find release friction and drove initiatives to reduce release cycle times and cognitive load.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="row"><span class="role">Technical Product Owner</span><span>Oct 2018 - Oct 2022</span></div>
+            <div class="company"><b>Native Instruments GmbH</b> | Berlin, Germany</div>
+            <p class="note">Product owner for the customer-facing download manager (Native Access), covering download, installation, and activation; later expanded to the internal developer release pipeline.</p>
+            <ul class="b">
+                <li>Planned and rolled out <b>telemetry giving full visibility into the user download journey</b>; built tracking plans, KPI frameworks, and Metabase dashboards, and used them with Customer Care to target the biggest bottlenecks.</li>
+                <li>Led the migration to modern installer technology across most products, improving the <b>customer success metric by 20%</b>.</li>
+  
+                <li>Coordinated cross-team OS compatibility work and mitigated major security impacts introduced by macOS 10.15 (Catalina).</li>
+                <li>Ran Improvement Kata experiments with internal agile coaches to improve cross-team collaboration.</li>
+                <li>Co-organized a peer coaching community of practice for product managers, where members brought real challenges and coached each other toward solutions.</li>
+            </ul>
+            <p class="tech"><b>Technologies:</b> GitHub, Jenkins, Artifactory, GCP, AWS, Grafana, Metabase, Mixpanel, Sentry, SQL, Jira, Miro, Confluence</p>
+        </div>
+
+        <div class="job">
+            <div class="row"><span class="role">Product Manager</span><span>Dec 2016 - Jan 2018</span></div>
+            <div class="company"><b>Itembase</b> | E-commerce API integration platform | Berlin, Germany | Reporting to the CPO</div>
+            <ul class="b">
+                <li>Led product development of a <b>B2B merchant insights tool</b> built on multi-channel sales data.</li>
+                <li>Conducted user discovery with merchants, translating pain points into PRDs, feature specifications, and end-to-end user journeys.</li>
+                <li>Aligned Sales, Engineering, and Product to connect commercial priorities with technical delivery.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="row"><span class="role">Product Manager (Founding Team)</span><span>Sep 2013 - Oct 2016</span></div>
+            <div class="company"><b>3DSellers</b> | B2B SaaS eCommerce management platform | Herzliya, Israel</div>
+            <p class="note">Progressed from Marketing &amp; Customer Support Coordinator to Product Manager as the startup grew.</p>
+            <ul class="b">
+                <li>As a founding team member, helped scale the platform to <b>200,000+ eBay sellers</b>; built and maintained the product roadmap and feature backlog.</li>
+                <li>Designed and ran A/B tests on onboarding and engagement in Intercom, and analyzed funnels and behavior with FullStory, Hotjar, and Google Analytics to improve activation and retention.</li>
+                <li>Created wireframes and functional flows in close partnership with engineering and design.</li>
+                <li>Built a self-service help center, support documentation, and video tutorials from scratch, scaling support capacity alongside rapid user growth.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="cv-section">
+        <h2>Education</h2>
+        <div class="row"><b>University of Haifa</b><span>2007 - 2011</span></div>
+        <div class="degree">Sociology &amp; Anthropology and Visual Art studies (qualitative and quantitative research methodologies)</div>
+        <div class="row" style="margin-top:8px"><b>she codes;</b><span>2016 - 2017</span></div>
+        <div class="degree">Frontend Web Development</div>
+        <div class="row" style="margin-top:8px"><b>Mind the Product</b><span>2020</span></div>
+        <div class="degree">A Product Mindset on Metrics</div>
+        <div class="row" style="margin-top: 8px;"><b>Elevate Women Global Hackathon</b><span>2026</span></div>
+        <div class="degree">Workshops on product discovery and building with AI tools</div>
+    </section>
+
+    <section class="cv-contact" id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Open to product leadership, team facilitation, and strategy collaborations.</p>
+            <div class="contact-links">
+                <a href="mailto:tzipischindler@gmail.com" class="contact-link">Email</a>
+                <a href="https://www.linkedin.com/in/tzipi-schindler/" class="contact-link" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="cv-footer">
+    <p>&copy; 2026 Tzipi Schindler. All rights reserved.</p>
+</footer>
+<script src="navigation.js" defer></script>
+</body>
+</html>
