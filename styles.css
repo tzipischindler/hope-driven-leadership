@@ -474,7 +474,7 @@ footer {
     }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 600px) {
     header {
         position: sticky;
     }
